@@ -1,0 +1,91 @@
+# Modelo de score por cliente – Diseño y uso
+
+**TFM: Agente de Priorización de Cobros y reducción de morosidad en PYMES**
+
+---
+
+## 1. Riesgos y oportunidades
+
+### Riesgos
+
+- **Riesgo de morosidad**: probabilidad de que un cliente sea mal pagador (no pague a tiempo).
+- El modelo asigna un **score de pago** (0–1) y un **nivel de riesgo** (Alto / Medio / Bajo) por cliente.
+- **Segmentos de alto riesgo**: clientes con score bajo o riesgo Alto. Priorizar cobro y seguimiento.
+
+### Oportunidades
+
+- **Mismo score, interpretación dual**:
+  - **Bajo riesgo** (score alto): oportunidad de cobro más sencillo; menor esfuerzo de gestión.
+  - **Alto riesgo** (score bajo): oportunidad de actuar de forma proactiva (recordatorios, negociación) para reducir morosidad.
+- Oportunidades adicionales (p. ej. pronto pago, descuentos) requieren datos específicos y, en su caso, modelos complementarios.
+
+---
+
+## 2. Diseño del modelo
+
+### Target (variable objetivo)
+
+- **Nivel**: cliente (una fila por cliente).
+- **Variable binaria**: `riesgo_alto = 1` (mal pagador) vs `0` (buen pagador).
+- **Definición** (configurable en el script de entrenamiento):
+  - Por defecto: `riesgo_alto = 1` si `tasa_pago_a_tiempo < 0,6`.
+  - Alternativa: tercios según `tasa_pago_a_tiempo` (tercio inferior = riesgo alto).
+
+### Features (sin fuga de información)
+
+**Incluidas:**
+
+- `sector` (one-hot).
+- `scoring_externo` (one-hot u ordinal).
+- `provincia` (one-hot).
+- `facturas_totales`, `importe_promedio_historico`, `ticket_medio` (= `importe_promedio_historico` / `facturas_totales`).
+
+**Excluidas (evitar leakage):**
+
+- `tasa_pago_a_tiempo`, `avg_dias_retraso`, `facturas_pagadas`. Son resultado del comportamiento de pago y no se usan como predictoras.
+
+### Pipeline
+
+- **Preprocesado**: `ColumnTransformer` con `OneHotEncoder` (categóricas) y `StandardScaler` (numéricas).
+- **Modelos probados**: Regresión logística y Random Forest. Se elige el de mayor AUC-ROC en validación cruzada (5-fold).
+- **Métricas**: AUC-ROC, precisión, recall, F1, matriz de confusión.
+- **Salida**: probabilidad de riesgo alto → **score de pago** = `1 − P(riesgo_alto)`.
+
+### Niveles de riesgo
+
+- **Bajo**: `score_pago ≥ 0,6`.
+- **Medio**: `0,4 ≤ score_pago < 0,6`.
+- **Alto**: `score_pago < 0,4`.
+
+Umbrales configurables en `modelos/modelo_score_config.json` (`risk_tier_thresholds`).
+
+---
+
+## 3. Uso del score
+
+### Artefactos
+
+- **Modelo**: `modelos/modelo_score_cliente.joblib` (pipeline completo).
+- **Config**: `modelos/modelo_score_config.json` (target, features, umbrales, métricas de validación).
+- **Exportación**: `outputs/scores_clientes_YYYYMMDD.csv` con `cliente_id`, `score_pago`, `riesgo`.
+
+### Flujo operativo
+
+1. **Entrenar**: `python scripts/04_modelo_score_cliente.py` (o equivalente con el intérprete configurado).
+2. **Exportar scores**: `python scripts/05_exportar_scores.py`. Genera el CSV en `outputs/`.
+3. **Consumo**:
+   - **Power BI**: conectar al CSV en `outputs/` para dashboards y análisis.
+   - **Agente LLM (Claude)**: leer el mismo CSV para recomendaciones y priorización de cobros.
+
+### Ejecución
+
+- Requiere las dependencias de `requirements.txt` (p. ej. `pandas`, `scikit-learn`, `joblib`).
+- Si el Python por defecto es 3.13 y `scikit-learn` no está disponible, usar **Anaconda** (Python 3.11) para los scripts de modelo y exportación.
+
+---
+
+## 4. Limitaciones
+
+- **Tamaño muestral**: 100 clientes; las métricas pueden variar entre splits. Se usa validación cruzada para estimar rendimiento.
+- **Features**: solo atributos estáticos y agregados de historial. Variables adicionales (antigüedad, producto, etc.) pueden incorporarse en futuras versiones.
+- **Oportunidades**: por ahora se interpretan vía score de riesgo (priorización de cobro). Otras oportunidades (p. ej. pronto pago) exigirían datos y modelos adicionales.
