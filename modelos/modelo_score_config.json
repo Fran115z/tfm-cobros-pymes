@@ -1,0 +1,26 @@
+{
+  "target_criterion": "tasa",
+  "target_threshold": 0.6,
+  "best_model": "logistic",
+  "feature_cols_cat": [
+    "sector",
+    "scoring_externo",
+    "provincia"
+  ],
+  "feature_cols_num": [
+    "facturas_totales",
+    "importe_promedio_historico",
+    "ticket_medio"
+  ],
+  "risk_tier_thresholds": {
+    "bajo": 0.6,
+    "medio": 0.4
+  },
+  "val_metrics": {
+    "auc": 1.0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  }
+}
