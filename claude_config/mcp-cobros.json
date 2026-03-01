@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "cobros-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\frana\\Documents\\tfm_cobros_pymes\\outputs",
+        "C:\\Users\\frana\\Documents\\tfm_cobros_pymes\\plantillas"
+      ]
+    }
+  }
+}

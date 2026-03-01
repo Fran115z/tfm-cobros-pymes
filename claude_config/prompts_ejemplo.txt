@@ -1,0 +1,35 @@
+# Prompts útiles para Claude Desktop con TFM Cobros PYMES
+
+## Consultas básicas
+1. "¿Cómo vamos a día de hoy?"
+2. "¿Cuántas facturas tengo pendientes?"
+3. "¿Cuál es el importe total de facturas vencidas?"
+
+## Análisis y priorización
+4. "Dame las 10 facturas más críticas"
+5. "Muéstrame el top 5 de clientes con más riesgo"
+6. "¿Qué sectores tienen más facturas vencidas?"
+
+## Exportación de datos
+7. "Crea un archivo txt con las 10 facturas prioritarias"
+8. "Genera un Excel con los próximos recordatorios"
+9. "Exporta un resumen de la semana"
+
+## Comunicación con clientes
+10. "Redacta 3 correos para los clientes de mayor riesgo"
+11. "Crea un guión de llamada para el cliente CLI_001"
+12. "Genera mensajes de WhatsApp para facturas de 30+ días"
+
+## Análisis temporal
+13. "¿Cómo ha evolucionado la morosidad este mes?"
+14. "Muéstrame facturas que vencen la próxima semana"
+15. "Compara el comportamiento de pago por provincia"
+
+## Sugerencias de acción
+16. "¿Qué facturas debería priorizar hoy?"
+17. "Crea un plan de acción semanal"
+18. "¿Qué clientes debería contactar por teléfono?"
+
+## Recordatorios
+19. "Programa recordatorios para facturas de 15 días"
+20. "Configura alertas para clientes con score bajo"
