@@ -1,0 +1,39 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Ignore model artifacts (optional - uncomment if you want to force retraining)
+# modelos/*.joblib
+# modelos/*.json
+
+# Ignore data files (user data should not be committed)
+datos/*.csv
+!datos/.gitkeep
+
+# Ignore output files (generated automatically)
+outputs/*.csv
+!outputs/.gitkeep
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore Python virtual environments
+venv/
+env/
+ENV/
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints
+
+# Ignore logs
+*.log
