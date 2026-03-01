@@ -1,0 +1,101 @@
+cliente_id,nombre,cif,sector,scoring_externo,provincia
+CLI_001,Menéndez y asociados S.A.,f1486528P,Retail,Medio,Región de Murcia
+CLI_002,Alfaro y asociados S.Com.,Y57332214,Transporte,Medio,Illes Balears
+CLI_003,Hermanos Castro S.Coop.,R22927065,Tecnología,Bajo,Castilla-La Mancha
+CLI_004,Emiliana López Sanchez S.A.U,X47359774,Transporte,Medio,Comunidad de Madrid
+CLI_005,Cáceres y Flores S.L.,s40758181,Construcción,Medio,Principado de Asturias
+CLI_006,Inmobiliaria Sancho S.L.N.E,z61375060,Retail,Alto,La Rioja
+CLI_007,Gutiérrez y asociados S.L.U.,30515220s,Consultoría,Medio,País Vasco
+CLI_008,Tecnologías Sanabria S.Coop.,h04328986,Tecnología,Medio,Comunitat Valenciana
+CLI_009,Inversiones Españolas S.A.,97117980O,Retail,Bajo,La Rioja
+CLI_010,Despacho Inteligentes S.Com.,x5396218e,Alimentación,Medio,La Rioja
+CLI_011,Hnos Soriano S.A.,54051531X,Alimentación,Alto,Ciudad Autónoma de Melilla
+CLI_012,Cañellas & Asociados S.Com.,27722170s,Construcción,Medio,Castilla y León
+CLI_013,Grupo Arnaiz S.Com.,86874034w,Alimentación,Bajo,Aragón
+CLI_014,Llano & Asociados S.L.,67652775Z,Construcción,Bajo,La Rioja
+CLI_015,Compañía Rodriguez & Asociados S.Com.,C84511544,Construcción,Medio,Región de Murcia
+CLI_016,Supermercados Ortega S.Com.,x5964016G,Alimentación,Medio,Cantabria
+CLI_017,Grupo Ríos S.A.,R35569092,Hostelería,Medio,Comunidad Foral de Navarra
+CLI_018,Peral y asociados S.L.,h2856543b,Tecnología,Alto,Cantabria
+CLI_019,Aura Pombo Carranza S.C.P,73947312e,Construcción,Bajo,Comunidad Foral de Navarra
+CLI_020,Supermercados Bonilla S.L.L.,51884422Y,Construcción,Medio,Galicia
+CLI_021,Consultoría Ibérica S.L.,i70589578,Transporte,Bajo,Principado de Asturias
+CLI_022,Inversiones ZLB S.L.,w1251778i,Consultoría,Medio,Ciudad Autónoma de Ceuta
+CLI_023,Desarrollo Roselló S.Coop.,w18242253,Alimentación,Medio,La Rioja
+CLI_024,Compañía Iglesia & Asociados S.L.,P4249818k,Retail,Bajo,Ciudad Autónoma de Melilla
+CLI_025,Distribuciones Nebot S.L.L.,X0010943K,Retail,Bajo,Región de Murcia
+CLI_026,Hnos Manjón S.L.,73647102C,Transporte,Bajo,Región de Murcia
+CLI_027,Abril Frías Nieto S.Coop.,55625881u,Tecnología,Alto,Castilla-La Mancha
+CLI_028,Donato Lastra Sancho S.C.P,K04696325,Tecnología,Medio,Extremadura
+CLI_029,Distribuciones del Sur S.L.U.,74701687p,Tecnología,Alto,Castilla y León
+CLI_030,Atienza & Asociados S.C.P,q7480162U,Transporte,Bajo,Galicia
+CLI_031,Paz y Arrieta S.Com.,G8358416C,Construcción,Alto,Ciudad Autónoma de Ceuta
+CLI_032,Consultoría Castells & Asociados S.Com.,85239868c,Transporte,Medio,Aragón
+CLI_033,Grupo Mínguez S.L.,u7298259k,Transporte,Medio,Comunidad de Madrid
+CLI_034,Manufacturas Vendrell y asociados S.L.,70551694Y,Consultoría,Alto,Andalucía
+CLI_035,Juan Manuel Goñi Aznar S.Coop.,m89623091,Construcción,Alto,Andalucía
+CLI_036,Mauricio Riquelme Cordero S.Com.,J68970283,Transporte,Medio,Extremadura
+CLI_037,Begoña Peñas Mir S.L.N.E,85854973p,Tecnología,Alto,Cataluña
+CLI_038,Hotel Martorell y asociados S.L.,h7575844K,Alimentación,Bajo,Ciudad Autónoma de Ceuta
+CLI_039,Prat y Ochoa S.L.N.E,n40415747,Construcción,Bajo,Castilla y León
+CLI_040,Inmobiliaria Cervantes & Asociados S.Coop.,g3308330A,Retail,Medio,Extremadura
+CLI_041,Cornelio Cervantes Adadia S.L.N.E,X67734540,Alimentación,Medio,Principado de Asturias
+CLI_042,Banco Iberia S.Com.,K06724004,Transporte,Bajo,Illes Balears
+CLI_043,Luís y asociados S.L.U.,Z8728743h,Consultoría,Alto,Extremadura
+CLI_044,Talleres Jimenez S.L.,G54932966,Retail,Medio,Extremadura
+CLI_045,Servicios EZYW S.A.,37454990q,Consultoría,Alto,Galicia
+CLI_046,Comercial Españolas S.Coop.,o68414593,Tecnología,Medio,Canarias
+CLI_047,Ezequiel Sanz Pereira S.Com.,C7833918H,Construcción,Medio,Galicia
+CLI_048,Consultoría RU S.A.D,T2258713L,Consultoría,Alto,País Vasco
+CLI_049,Supermercados XA S.Coop.,L87406403,Tecnología,Alto,Principado de Asturias
+CLI_050,Hnos Ocaña S.L.,X0170462i,Construcción,Alto,Región de Murcia
+CLI_051,Piñeiro y asociados S.L.N.E,61825128z,Tecnología,Bajo,La Rioja
+CLI_052,Hotel Acevedo S.L.,78686337w,Consultoría,Alto,Canarias
+CLI_053,Finanzas Carbajo & Asociados S.L.L.,90331190C,Transporte,Medio,Aragón
+CLI_054,Banco del Mediterráneo S.Com.,u3028439K,Construcción,Bajo,Extremadura
+CLI_055,Inversiones Globales S.L.U.,V3644089l,Consultoría,Alto,Región de Murcia
+CLI_056,Asdrubal Ocaña Piquer S.L.,66246287p,Consultoría,Alto,Castilla-La Mancha
+CLI_057,Despacho Sierra & Asociados S.Coop.,88263435P,Tecnología,Medio,Principado de Asturias
+CLI_058,Rebeca Peláez Bru S.Coop.,Z04699013,Alimentación,Medio,Ciudad Autónoma de Melilla
+CLI_059,Tecnologías Ibérica S.L.N.E,40331739T,Alimentación,Medio,Castilla y León
+CLI_060,Heras y Montoya S.L.,78544587D,Retail,Alto,Illes Balears
+CLI_061,María Montero Frutos S.Com.,09320489L,Construcción,Medio,Región de Murcia
+CLI_062,Despacho Ferrández y asociados S.A.T.,D3785477k,Transporte,Medio,Galicia
+CLI_063,Desarrollo Torres S.A.,i0801006O,Transporte,Alto,Castilla-La Mancha
+CLI_064,Despacho LX S.A.,A9770088a,Alimentación,Bajo,Andalucía
+CLI_065,Instalaciones Alemany y asociados S.L.L.,q11823398,Hostelería,Medio,Galicia
+CLI_066,Servicios Bermúdez y asociados S.L.N.E,93341016y,Hostelería,Bajo,Comunidad de Madrid
+CLI_067,Basilio Agustí Donoso S.A.,59180339E,Construcción,Bajo,Cataluña
+CLI_068,Familia Lozano S.L.N.E,W0250392T,Construcción,Bajo,Comunidad de Madrid
+CLI_069,Inversiones DD S.L.L.,d8562185g,Alimentación,Medio,Región de Murcia
+CLI_070,Comercializadora Internacionales S.Coop.,o9650477w,Alimentación,Medio,Ciudad Autónoma de Ceuta
+CLI_071,Rosales y Estevez S.L.,r6194311j,Hostelería,Bajo,Comunidad de Madrid
+CLI_072,Restauración Moliner S.Com.,l04754121,Consultoría,Alto,Región de Murcia
+CLI_073,Cecilia Vila Raya S.A.,s58199560,Alimentación,Medio,Región de Murcia
+CLI_074,Blazquez y Herrero S.Coop.,e62244472,Consultoría,Alto,Cantabria
+CLI_075,Llorente y Robledo S.Com.,g54379937,Transporte,Bajo,Canarias
+CLI_076,Alimentación Priego y asociados S.L.L.,57569245M,Tecnología,Medio,Castilla y León
+CLI_077,Mauricio Elías Puig S.L.N.E,79356465h,Alimentación,Medio,Ciudad Autónoma de Melilla
+CLI_078,Farmaceútica Avanzadas S.L.N.E,37416724p,Hostelería,Medio,Cataluña
+CLI_079,Suministros Pi S.A.,c7968868Y,Alimentación,Alto,Galicia
+CLI_080,Construcción IS S.L.,o96561014,Construcción,Medio,La Rioja
+CLI_081,Supermercados del Levante S.Com.,s9825071A,Transporte,Medio,Principado de Asturias
+CLI_082,Despacho QXK S.Coop.,17751401b,Hostelería,Bajo,Extremadura
+CLI_083,Distribuciones MJID S.L.N.E,C62266093,Construcción,Alto,Ciudad Autónoma de Melilla
+CLI_084,Porcel y Acuña S.L.,m41918255,Transporte,Medio,Comunidad Foral de Navarra
+CLI_085,Infraestructuras SBHF S.Coop.,N1557924L,Retail,Alto,Principado de Asturias
+CLI_086,Logística Carranza S.A.U,K25286692,Construcción,Bajo,Comunidad de Madrid
+CLI_087,Estevez y Torrecilla S.L.,u2827422C,Tecnología,Alto,Aragón
+CLI_088,Agustí y asociados S.A.,88767677k,Consultoría,Alto,Principado de Asturias
+CLI_089,Grupo Manzano S.A.,h84279788,Transporte,Alto,Ciudad Autónoma de Melilla
+CLI_090,Inmobiliaria QTQC S.L.,q3613407w,Tecnología,Alto,Principado de Asturias
+CLI_091,Rosenda Carpio Gálvez S.A.T.,Y9596292n,Retail,Medio,Castilla y León
+CLI_092,Hermanos Lucas S.Coop.,W54494812,Tecnología,Alto,Región de Murcia
+CLI_093,Hermanos Castañeda S.L.,O32536729,Hostelería,Medio,Cataluña
+CLI_094,Perez y Sans S.A.,a68457759,Transporte,Alto,Principado de Asturias
+CLI_095,Fabiola Palma Barroso S.L.,36374545J,Alimentación,Medio,Ciudad Autónoma de Melilla
+CLI_096,Transportes Nuñez S.L.N.E,a01701277,Hostelería,Alto,Región de Murcia
+CLI_097,Desarrollo Inteligentes S.A.,15415206O,Consultoría,Alto,Comunitat Valenciana
+CLI_098,Suministros Española S.L.,a37129387,Transporte,Bajo,Andalucía
+CLI_099,Carreño y asociados S.L.,13611155t,Construcción,Bajo,Canarias
+CLI_100,Cañas y Clavero S.A.,A0927532N,Construcción,Medio,Comunidad Foral de Navarra
